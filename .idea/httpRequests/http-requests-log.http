@@ -1,0 +1,44 @@
+GET https://mastodon.social/api/v1/accounts/109897234224245358/statuses
+Content-Length: 24
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+Accept: application/json
+
+<> 2023-03-25T215201.200.json
+
+###
+
+GET https://mastodon.social/api/v1/timelines/public?local=true&limit=3
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-03-24T113359.200.json
+
+###
+
+GET https://mastodon.social/api/v1/timelines/public?local=true&limit=3
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-03-24T111303.200.json
+
+###
+
+GET https://mastodon.social/api/v1/apps/verify_credentials
+Authorization: Bearer k89OEhjz94l2u23f5_RSj3OIGw--tMMn8EFkyGDnWlA
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-03-24T111237.200.json
+
+###
+

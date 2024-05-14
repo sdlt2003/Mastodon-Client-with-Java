@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.PasswordField?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F5A9B8;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eus.ehu.socialnetwork.controllers.LoginController">
+   <children>
+      <ImageView fx:id="leftImageView" fitHeight="400.0" fitWidth="285.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="323.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="324.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" wrappingWidth="51.328125">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="passwrdTxt" layoutX="389.0" layoutY="200.0" style="-fx-background-color: #E7CFD3;" />
+      <Button fx:id="registerButton" layoutX="293.0" layoutY="374.0" onAction="#onRegisterButtonClick" style="-fx-background-color: #F5A9B8;" text="Don't have an account? Register here." />      <ImageView fx:id="kitaImageView" fitHeight="126.0" fitWidth="125.0" layoutX="401.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="bocchiImageView" fitHeight="119.0" fitWidth="135.0" layoutX="486.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="usernameTxt" layoutX="389.0" layoutY="137.0" style="-fx-background-color: #E7CFD3;" />
+      <ImageView fx:id="loginImageView" fitHeight="150.0" fitWidth="200.0" layoutX="250.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="logoImageView" fitHeight="150.0" fitWidth="200.0" layoutX="314.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="loginButton" layoutX="486.0" layoutY="242.0" mnemonicParsing="false" onAction="#onLoginButtonClick" style="-fx-background-color: #E7CFD3;" text="Log in" />
+   </children>
+</AnchorPane>

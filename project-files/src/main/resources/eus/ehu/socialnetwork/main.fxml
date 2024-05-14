@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainWrapper" prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #e0e0e0;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eus.ehu.socialnetwork.MainAppController">
+    <center>
+        <AnchorPane maxWidth="400.0" BorderPane.alignment="CENTER" />
+    </center>
+   <right>
+        <VBox alignment="CENTER" prefHeight="600.0" prefWidth="285.0" spacing="20.0" BorderPane.alignment="CENTER">
+            <children>
+            <Button fx:id="homeButton" mnemonicParsing="false" onAction="#actionMyToots" prefHeight="54.0" prefWidth="270.0" style="-fx-background-color: #FCCDB6; -fx-border-color: black; -fx-border-radius: 20;" styleClass="toots" text="HOME">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="notButton" mnemonicParsing="false" onAction="#actionMyToots" prefHeight="54.0" prefWidth="270.0" style="-fx-background-color: #FCCDB6; -fx-border-color: black; -fx-border-radius: 20;" styleClass="toots" text="NOTIFICATIONS">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="pmsgButtn" mnemonicParsing="false" onAction="#actionMyToots" prefHeight="54.0" prefWidth="270.0" style="-fx-background-color: #CBF1F4; -fx-border-color: black; -fx-border-radius: 20;" styleClass="toots" text="P. MESSAGES">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="favButton" mnemonicParsing="false" onAction="#actionMyToots" prefHeight="54.0" prefWidth="270.0" style="-fx-background-color: #CBF1F4; -fx-border-color: black; -fx-border-radius: 20;" styleClass="toots" text="FAVORITES">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Button>
+                <Button fx:id="retootButton" mnemonicParsing="false" onAction="#actionMyToots" prefHeight="54.0" prefWidth="270.0" style="-fx-background-color: #CBF1F4; -fx-border-color: black; -fx-border-radius: 20;" styleClass="toots" text="RETOOTS">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font></Button>
+                <Button fx:id="flwingButton" mnemonicParsing="false" onAction="#actionFollowing" prefHeight="54.0" prefWidth="270.0" style="-fx-background-color: #F9BADC; -fx-border-color: black; -fx-border-radius: 20;" styleClass="following" text="FOLLOWINGS">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font></Button>
+                <Button fx:id="flwerButton" mnemonicParsing="false" onAction="#actionFollowers" prefHeight="54.0" prefWidth="270.0" style="-fx-background-color: #F9BADC; -fx-border-color: black; -fx-border-radius: 20;" styleClass="followers" text="FOLLOWERS">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font></Button>
+            <Button fx:id="myTootsButton" mnemonicParsing="false" onAction="#actionMyToots" prefHeight="54.0" prefWidth="270.0" style="-fx-background-color: #F9BADC; -fx-border-color: black; -fx-border-radius: 20;" styleClass="toots" text="MY TOOTS">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Button>
+            </children>
+        </VBox>
+   </right>
+   <left>
+      <VBox alignment="CENTER" prefHeight="600.0" prefWidth="285.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="avatarImg" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </children></VBox>
+   </left>
+</BorderPane>
